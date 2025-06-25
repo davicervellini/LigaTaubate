@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<meta property="og:url" content="http://www.pigno.se/barn/PIGNOSE-Popup">
+	<meta property="og:type" content="product" />
+	<meta property="og:title" content="PIGNOSE Popup" />
+	<meta property="og:description" content="PIGNOSE Popup is simple flat design modal plugin." />
+	<meta property="og:image" content="http://www.pigno.se/barn/PIGNOSE-Popup/demo/img/cover@250.png" />
+	<meta property="og:site_name" content="PIGNOSE" />
+	<title>PIGNOSE Popup</title>
+	<link rel="shortcut icon" type="image/x-icon" href="demo/img/pignose-ico.ico" />
+	<link rel="stylesheet" href="demo/css/semantic.ui.min.css">
+	<link rel="stylesheet" href="demo/css/prism.css" />
+	<link rel="stylesheet" href="demo/css/style.css" />
+	<link rel="stylesheet" href="src/css/pignose.popup.css" />
+	<style>
+		.pignose-popup {
+			font-family: 'Raleway', 'helvetica', 'sans-serif';
+		}
+
+		.pignose-popup pre {
+			margin: 0;
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			text-align: center;
+		}
+
+		.pignose-popup pre code,
+		.pignose-popup pre code span {
+			font-family: 'Raleway', 'helvetica', 'sans-serif' !important;
+			font-size: 115%;
+		}
+	</style>
+	<script type="text/javascript" src="demo/js/jquery.latest.min.js"></script>
+	<script type="text/javascript" src="demo/js/semantic.ui.min.js"></script>
+	<script type="text/javascript" src="demo/js/prism.min.js"></script>
+	<script type="text/javascript" src="src/js/pignose.popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/pignose.popup.min.css" />
+
+	<script type="text/javascript">
+	$(function() {
+
+		$('.button.pg-black').bind('click', function(event) {
+			event.preventDefault();
+			$('#pg-black').pignosePopup({
+				theme: 'black'
+			});
+		});
+
+
+
+	});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="article">
+			<a href="#" class="ui button black pg-black">Black</a>
+		</div>
+	</div>
+	<div id="pg-black" class="pignose-popup">
+		<div class="item_header">
+			<span class="txt_title">ESCOLHA O CAMPEONATO</span>
+			<a href="#" class="btn_close"><img src="demo/img/icon_close.gif" alt="Fechar" /></a>
+		</div>
+		<div class="item_content">
+			
+		</div>
+	</div>
+</body>
+</html>
